@@ -33,41 +33,7 @@
     <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet"'>
 
 
-    <style>
-        /*Scroll*/
-        @keyframes scroll_image {
-            from {}
-
-            to {
-                transform: translateY(10px);
-            }
-        }
-
-        /*Gallery*/
-        @keyframes galleryAnimate {
-            0% {
-                transform: perspective(1000px) rotateY(0deg);
-            }
-
-            100% {
-                transform: perspective(1000px) rotateY(360deg);
-            }
-        }
-
-        @keyframes fadeBackground {
-            0% {
-                background-color: black;
-            }
-
-            50% {
-                background-color: #000B11;
-            }
-
-            100% {
-                background-color: black;
-            }
-        }
-    </style>
+    <style></style>
 
 </head>
 
@@ -92,11 +58,11 @@
             <!--Navigation Menu-->
             <div class="navigation">
                 <a href="" class="nav-item">Home</a>
-                <a href="" class="nav-item">Gallery</a>
-                <a href="" class="nav-item">Education</a>
-                <a href="" class="nav-item">Skills</a>
+                <a href="#gallery" class="nav-item">Gallery</a>
+                <a href="#education" class="nav-item">Education</a>
+                <a href="#skillMain" class="nav-item">Skills</a>
                 <a href="" class="nav-item">Assignments</a>
-                <a href="" class="nav-item">Projects</a>
+                <a href="#projects" class="nav-item">Projects</a>
                 <a href="" class="nav-item">YouTube</a>
                 <a href="" class="nav-item">Photography</a>
                 <a href="" class="nav-item">Hire Me</a>
@@ -155,8 +121,8 @@
         </div>
         <!--end paralax scene-->
 
-        <!----------------------------- About Me ----------------------------->
 
+        <!----------------------------- About Me ----------------------------->
         <div class="about-me">
             <center>
                 <span class="about">About</span><span class="me">Me</span>
@@ -241,9 +207,9 @@
         </div>
         <!----------------------------- End About Me ----------------------------->
 
-        <!----------------------------- Photo Gallery ----------------------------->
 
-        <div class="photo-gallery">
+        <!----------------------------- Photo Gallery ----------------------------->
+        <div class="photo-gallery" id="gallery">
             <center>
                 <span class="photo">Photo</span><span class="gallery">Gallery</span>
             </center>
@@ -262,12 +228,11 @@
 
             </div>
         </div>
-
         <!----------------------------- End Photo Gallery ----------------------------->
 
-        <!----------------------------- Education ----------------------------->
 
-        <div class="education">
+        <!----------------------------- Education ----------------------------->
+        <div class="education" id="education">
             <center>
                 <span class="edu">Edu</span><span class="cation">Cation</span>
             </center>
@@ -315,8 +280,8 @@
         </div>
         <!----------------------------- End Education ----------------------------->
 
-        <!----------------------------- Education ----------------------------->
 
+        <!----------------------------- Achievements ----------------------------->
         <div class="achievements">
             <center>
                 <span class="achieve">Achieve</span><span class="ments">Ments</span>
@@ -379,11 +344,119 @@
 
             </div>
         </div>
-        <!----------------------------- End Education ----------------------------->
+        <!----------------------------- End Achievements ----------------------------->
+
+
+        <!----------------------------- Skills ----------------------------->
+        <main id="skillMain">
+
+            <section id="skillSection">
+                <!--Header-->
+                <div id="skillTopic">
+                    <h1>Skills</h1>
+                    <p>Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus Lorem ipsum dolor sit amet, consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores necessitatibus obcaecati possimus qui. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto beatae cum dolores in iure, </p>
+                </div>
+
+                <!--Skills-->
+                <section id="progressSection">
+
+                    <div class="prog">
+                        <div class="progCircle">
+                            <h3>85%</h3>
+                        </div>
+                        <h3>Java</h3>
+                    </div>
+
+                    <div class="prog">
+                        <div class="progCircle">
+                            <h3>90%</h3>
+                        </div>
+                        <h3>JavaFX</h3>
+                    </div>
+
+                    <div class="prog">
+                        <div class="progCircle">
+                            <h3>98%</h3>
+                        </div>
+                        <h3>Figma</h3>
+                    </div>
+
+                    <div class="prog">
+                        <div class="progCircle">
+                            <h3>78%</h3>
+                        </div>
+                        <h3>SQL</h3>
+                    </div>
+
+                    <div class="prog">
+                        <div class="progCircle">
+                            <h3>95%</h3>
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+
+                    <div class="prog">
+                        <div class="progCircle">
+                            <h3>95%</h3>
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+
+                    <div class="prog">
+                        <div class="progCircle">
+                            <h3>85%</h3>
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+
+                </section>
+            </section>
+
+            <!--CV Button-->
+            <div id="cvBtn">
+                <button>Download CV</button>
+            </div>
+
+            <!--Software-->
+            <section id="skillSoftwares">
+                <div class="sBox">
+                    <img src="assets/icons/figma.png" title="figma" alt="figma">
+                </div>
+
+                <div class="sBox">
+                    <img src="assets/icons/java.png" title="java" alt="java">
+                </div>
+
+                <div class="sBox">
+                    <img src="assets/icons/intelij.png" title="intelij" alt="intelij">
+                </div>
+
+                <div class="sBox">
+                    <img src="assets/icons/CSS.png" title="CSS" alt="CSS">
+                </div>
+
+                <div class="sBox">
+                    <img src="assets/icons/VS.png" title="VS" alt="VS">
+                </div>
+
+                <div class="sBox">
+                    <img src="assets/icons/JS.png" title="JS" alt="JS">
+                </div>
+
+                <div class="sBox">
+                    <img src="assets/icons/html.png" title="html" alt="html">
+                </div>
+            </section>
+
+        </main>
+        <!----------------------------- End Skills ----------------------------->
+
+
+
 
         <!----------------------------- Projects ----------------------------->
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <center>
                 <span class="pro">Pro</span><span class="jects">Jects</span>
             </center>
@@ -445,6 +518,20 @@
     </div>
     <!--end scrollable container-->
 </div>
+
+<script>
+    // Example function to update the progress circle based on percentage
+    function updateProgress(progress) {
+        const circle = document.querySelector('.progCircle');
+        const fill = `conic-gradient(#00F0FF 0% ${progress}%, transparent ${progress}% 100%)`;
+        circle.style.background = fill;
+    }
+
+    // Example usage: updating to 75% progress
+    updateProgress(75);
+
+</script>
+
 </body>
 
 </html>
