@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/IJSE.png">
+
+    <link rel="stylesheet" href="../../assets/style/normalize.css">
+
+    <title>Sectioning</title>
+
+    <style>
+
+        /*navigation - logo*/
+        section:first-child{
+            margin-top: 120px;
+        }
+        header{
+            width: 100vw;
+            height: 100px;
+            background-color: #e8e8e8;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+            position: fixed;
+            top: 0;
+        }
+
+        header>div{
+            position: relative;
+        }
+        header>div>img{
+            position: absolute;
+            left: 10px;
+            top: 20px;
+        }
+
+        header>div>h3{
+            color: black;
+            font-size: 26px;
+
+            position: absolute;
+            left: 250px;
+            top: 35px;
+
+            margin: 0;
+        }
+
+        /*navigations*/
+
+        header>nav>a{
+            font-size: 14px;
+            text-decoration: none;
+            color: black;
+
+            position: absolute;
+            top: 45px;
+            right:  20px;
+        }
+
+        header>nav>a:first-child{
+            position: absolute;
+            right:250px;
+        }
+
+        header>nav>a:nth-child(2){
+            position: absolute;
+            right:150px;
+        }
+
+        header>nav>a:nth-child(3){
+            position: absolute;
+            right:50px;
+        }
+
+        /*---------------------------*/
+
+        /*Footer section*/
+
+        footer{
+            width: 100vw;
+            height: 300px;
+            background-color: #1c1c1c;
+
+            position: relative;
+        }
+
+        /*ijse logo*/
+        footer>div>img{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        /*ijse name*/
+        footer>div>h3{
+            position: absolute;
+            top:23px;
+            left: 130px;
+            color: white;
+
+            margin: 0;
+        }
+
+        /*footer info*/
+
+
+        footer>section>div>address {
+            position: absolute;
+            color: white;
+            top: 100px;
+            left: 20px;
+        }
+
+        footer>section>div>a:nth-child(2){
+            text-decoration: none;
+
+            position: absolute;
+            left: 20px;
+            top: 150px;
+        }
+        footer>section>div>a:nth-child(3){
+            text-decoration: none;
+
+            position: absolute;
+            left: 20px;
+            top: 180px;
+        }
+
+        #footer{
+            width: 100vw;
+            height: 50px;
+            background-color: black;
+
+            position: absolute;
+
+            bottom: 0;
+        }
+
+        #footer>div{
+            color: white;
+            position: absolute;
+            top: 15px;
+            left: 40%;
+        }
+
+        /* Hero section */
+        main section:first-child {
+            text-align: center;
+            padding: 50px 0;
+            background-color: #f4f4f4;
+        }
+
+        main section:first-child h1 {
+            font-size: 48px;
+            margin: 10px 0;
+        }
+
+        main section:first-child p {
+            font-size: 24px;
+            color: #555;
+            margin: 20px 0;
+        }
+
+        main section:first-child button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        main section:first-child button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Hero section image */
+        main section:nth-child(2) {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        main section:nth-child(2) img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* About section */
+        main h2 {
+            font-size: 36px;
+            text-align: center;
+            margin: 50px 0 30px 0;
+        }
+
+        main section:nth-child(2) {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        main section:nth-child(2) img {
+            width: 45%;
+            max-width: 400px;
+            border-radius: 10px;
+        }
+
+        main section:nth-child(2) p {
+            width: 45%;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* Project section */
+        main section:nth-child(3) {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+            background-color: #f4f4f4;
+        }
+
+        main section:nth-child(3) div {
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 30%;
+        }
+
+        main section:nth-child(3) h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        main section:nth-child(3) p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        main section:nth-child(3) button {
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        main section:nth-child(3) button:hover {
+            background-color: #218838;
+        }
+
+        /* Contact section */
+        main:nth-child(4) {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+        }
+
+        main:nth-child(4) img {
+            width: 30%;
+            max-width: 300px;
+            margin: 0 10px;
+            border-radius: 10px;
+        }
+
+        main:nth-child(4) section {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        main:nth-child(4) h3 {
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        main:nth-child(4) form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        main:nth-child(4) form div {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        main:nth-child(4) form label {
+            display: block;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        main:nth-child(4) form input,
+        main:nth-child(4) form textarea {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        main:nth-child(4) form button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        main:nth-child(4) form button:hover {
+            background-color: #0056b3;
+        }
+
+
+    </style>
+</head>
+<body>
+<!-- Header section -->
+<header>
+    <!-- logo section -->
+    <div>
+        <img src="assets/images/IJSE.png" title="logo" alt="logo" width="200px">
+        <h3>Institute of Software Engineering</h3>
+    </div>
+    <!-- Nav section -->
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Project</a>
+    </nav>
+</header>
+
+<section>
+<!-- Hero section -->
+<main>
+    <!-- Welcome section -->
+    <section>
+        <h4>Welcome</h4>
+        <h4>to</h4>
+        <h1>My Word</h1>
+        <p>Software Engineer</p>
+        <button>My CV</button>
+    </section>
+    <!-- Hero section image -->
+    <section>
+        <img src="../assets/images/small.jpg" title="my image" alt="my image">
+    </section>
+</main>
+
+<!-- About section -->
+<main>
+    <!-- About section topic -->
+    <h2>About</h2>
+    <!-- About section content -->
+    <section>
+        <img src="../assets/images/small.jpg" title="image" alt="image">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores assumenda consectetur consequatur consequuntur deserunt eaque id illo illum inventore ipsum iste laudantium neque, porro possimus quaerat soluta suscipit. Recusandae?
+        </p>
+    </section>
+</main>
+
+<!-- Project section -->
+<main>
+    <!-- Project section topic -->
+    <h2>Project</h2>
+    <!-- Project section content -->
+    <section>
+        <!-- Card 1 -->
+        <div>
+            <!-- Card title -->
+            <h3>Project 01</h3>
+            <!-- Card description -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <!-- Card button -->
+            <button>View more</button>
+        </div>
+        <!-- Card 2 -->
+        <div>
+            <!-- Card title -->
+            <h3>Project 02</h3>
+            <!-- Card description -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <!-- Card button -->
+            <button>View more</button>
+        </div>
+        <!-- Card 3 -->
+        <div>
+            <!-- Card title -->
+            <h3>Project 03</h3>
+            <!-- Card description -->
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <!-- Card button -->
+            <button>View more</button>
+        </div>
+    </section>
+</main>
+
+<!-- contact section -->
+<main>
+    <!-- contact section image 1 -->
+    <img src="../assets/images/small.jpg" title="contact-image" alt="contact-image">
+    <!-- contact section form -->
+    <section>
+        <h3>Contact Us</h3>
+        <form action="">
+            <div>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div>
+                <label for="message">Email</label><br>
+                <textarea id="message" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    <!-- contact section image 2 -->
+    <img src="../assets/images/small.jpg" title="contact-image" alt="contact-image">
+</main>
+
+<!-- footer section -->
+<footer>
+    <!-- footer logo section -->
+    <div>
+        <img src="assets/images/IJSE.png" title="logo" alt="logo" width="100px">
+        <h3>Institute of Software Engineering</h3>
+    </div>
+
+    <!-- footer information section -->
+    <section>
+        <div>
+            <address>123A, Flower Rd, Colombo</address>
+            <a href="mailto:hello@ijsetravel.lk">hello@ijsetravel.lk</a>
+            <a href="tel:+94768891111">+94 76 889 1111</a>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div>Developed by Dion Fernando</div>
+    </section>
+</footer>
+
+<!-------------------------------------------------------------------------------------------->
+<!--
+<br><br>
+
+<a href="page1.html">Open in same page</a> <br>
+<a href="page1.html" target="_blank">Open in new tab</a>
+
+<blockquote>dfsfsdfsdfefsratgrefsdhfvasfeskgfudsgkusvf</blockquote>
+-->
+
+</section>
+</body>
+</html>
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="this is the description">
+    <meta name="keywords" content="java, html, css, js, go, react, angular">
+    <meta name="author" content="ijse">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/x-icon" href="assets/images/IJSE.png">
+    <link rel="stylesheet" href="assets/style/normalize.css">
+
+    <title>Sectioning</title>
+
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: #333;
+            background-color: #f5f5f5;
+        }
+
+        a {
+            color: #007BFF;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Header section */
+        header {
+            width: 100%;
+            height: 80px;
+            background-color: #1c1c1c;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            position: fixed;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+        }
+
+        header img {
+            height: 60px;
+        }
+
+        header h3 {
+            color: white;
+            margin: 0;
+        }
+
+        header nav a {
+            color: white;
+            font-size: 16px;
+            text-decoration: none;
+            margin-left: 30px;
+            transition: color 0.3s;
+        }
+
+        header nav a:hover {
+            color: #007BFF;
+        }
+
+        /* Hero section */
+        .hero {
+            margin-top: 100px;
+            padding: 100px 0;
+            text-align: center;
+            background: linear-gradient(135deg, #6d5b97, #007BFF);
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin-bottom: 40px;
+        }
+
+        .hero button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #0056b3;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .hero button:hover {
+            background-color: #003d82;
+        }
+
+        .hero img {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* About section */
+        .about {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 100px 20px;
+            background-color: #f5f5f5;
+        }
+
+        .about img {
+            width: 45%;
+            max-width: 400px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .about p {
+            width: 45%;
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* Project section */
+        .projects {
+            padding: 100px 20px;
+            background-color: #ffffff;
+        }
+
+        .projects h2 {
+            text-align: center;
+            margin-bottom: 50px;
+            font-size: 36px;
+        }
+
+        .projects .card {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+        }
+
+        .projects .card div {
+            background-color: #f5f5f5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+            width: 30%;
+        }
+
+        .projects .card div:hover {
+            transform: translateY(-10px);
+        }
+
+        .projects .card h3 {
+            font-size: 24px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+
+        .projects .card p {
+            font-size: 16px;
+            margin-bottom: 20px;
+            color: #666;
+        }
+
+        .projects .card button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .projects .card button:hover {
+            background-color: #218838;
+        }
+
+        /* Contact section */
+        .contact {
+            padding: 100px 20px;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .contact h3 {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact form div {
+            margin-bottom: 20px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .contact form label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        .contact form input,
+        .contact form textarea {
+            width: 100%;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact form button {
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .contact form button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer section */
+        footer {
+            padding: 50px 20px;
+            background-color: #1c1c1c;
+            color: white;
+            text-align: center;
+        }
+
+        footer img {
+            height: 50px;
+            margin-bottom: 20px;
+        }
+
+        footer address,
+        footer a {
+            color: #ccc;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        footer .footer-bottom {
+            margin-top: 30px;
+            font-size: 14px;
+            color: #999;
+        }
+
+    </style>
+</head>
+<body>
+&lt;!&ndash; Header section &ndash;&gt;
+<header>
+    <div>
+        <img src="assets/images/IJSE.png" title="logo" alt="logo">
+    </div>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+    </nav>
+</header>
+
+&lt;!&ndash; Hero section &ndash;&gt;
+<section class="hero">
+    <h1>Welcome to My World</h1>
+    <p>Software Engineer</p>
+    <button>My CV</button>
+    <img src="../assets/images/small.jpg" title="my image" alt="my image">
+</section>
+
+&lt;!&ndash; About section &ndash;&gt;
+<section class="about">
+    <img src="../assets/images/small.jpg" title="image" alt="image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid asperiores assumenda consectetur consequatur consequuntur deserunt eaque id illo illum inventore ipsum iste laudantium neque, porro possimus quaerat soluta suscipit. Recusandae?</p>
+</section>
+
+&lt;!&ndash; Project section &ndash;&gt;
+<section class="projects">
+    <h2>Projects</h2>
+    <div class="card">
+        &lt;!&ndash; Card 1 &ndash;&gt;
+        <div>
+            <h3>Project 01</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>View more</button>
+        </div>
+        &lt;!&ndash; Card 2 &ndash;&gt;
+        <div>
+            <h3>Project 02</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>View more</button>
+        </div>
+        &lt;!&ndash; Card 3 &ndash;&gt;
+        <div>
+            <h3>Project 03</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button>View more</button>
+        </div>
+    </div>
+</section>
+
+&lt;!&ndash; Contact section &ndash;&gt;
+<section class="contact">
+    <h3>Contact</h3>
+    <form action="#">
+        <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter Your Name">
+        </div>
+        <div>
+            <label for="message">Message</label>
+            <textarea id="message" rows="5" placeholder="Enter Your Message"></textarea>
+        </div>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+&lt;!&ndash; Footer section &ndash;&gt;
+<footer>
+    <img src="../assets/images/IJSE.png" title="logo" alt="logo">
+    <address>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</address>
+    <a href="mailto:someone@example.com">someone@example.com</a>
+    <div class="footer-bottom">&copy; 2024. All rights reserved</div>
+</footer>
+</body>
+</html>-->

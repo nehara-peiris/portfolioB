@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 01</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+
+            animation: my-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+            animation-direction: alternate-reverse;
+            animation-delay: 2s;
+            /*animation-play-state: paused;*/
+        }
+
+        @keyframes my-animation {
+            /*0%{
+                background-color: lime;
+                !*margin-left: 500px;*!
+            }
+            50%{
+                background-color: red;
+            }
+            75%{
+                background-color: deeppink;
+            }
+            100%{
+                background-color: orangered;
+            }*/
+
+            from{
+                background-color: lime;
+                margin-left: 1000px;
+                border-radius: 100%;
+            }
+            to{
+                background-color: red;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div></div>
+<br>
+<div></div>
+<br>
+<div></div>
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 03</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: lightblue;
+            border: 5px solid darkblue;
+
+            transition-property: background-color, border, border-radius, transform;/*extra info  */
+
+            transition-duration: 3s;
+            /*transition-timing-function: linear;*/
+            /*transition-timing-function: ease;!*default*!*/
+            /*transition-timing-function: ease-out;*/
+            transition-timing-function: ease-in;
+        }
+
+        div:hover{
+            background-color: lightgreen;
+            border: 5px solid forestgreen;
+            border-radius: 100% 0 100% 0;
+
+            transform: rotate(360deg);
+            /*transition-delay: 5s;*/
+
+
+        }
+    </style>
+</head>
+<body>
+
+<div>
+
+</div>
+
+</body>
+</html>

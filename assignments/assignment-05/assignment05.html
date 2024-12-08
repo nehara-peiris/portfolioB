@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment 05</title>
+
+    <link rel="stylesheet" href="../../assets/style/normalize.css">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(#000000, #01141C, #01141C, #000000);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Inter';
+            font-weight: 800;
+            font-size: 36px;
+            color: #50DBEE;
+
+            position: absolute;
+            top: 50px;
+        }
+
+        #asCategories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 80px;
+            justify-content: center;
+        }
+
+        .asCatContainer {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #00F0FF;
+            border-radius: 30px;
+            background: #09212F;
+
+            color: white;
+            text-decoration: none;
+            font-family: 'Inter';
+            font-weight: 600;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.8s ease;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .asCatContainer:hover {
+            transform: scale(1.05);
+        }
+
+        .buttons {
+            display: none;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* Button styles */
+        .asCatContainer button {
+            width: 80px;
+            padding: 7px;
+            border: 1px solid #50DBEE;
+            border-radius: 20px;
+            background-color: #005E73;
+            color: #50DBEE;
+            font-family: 'Inter';
+            font-weight: 600;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .asCatContainer button:hover {
+            color: white;
+            background: #50DBEE;
+            box-shadow: 0 0 20px #50DBEE;
+        }
+
+        /* Center the buttons properly */
+        .asCatContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Show buttons on hover, hide the span text */
+        .asCatContainer:hover span {
+            opacity: 0;
+        }
+
+        .asCatContainer:hover .buttons {
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Assignment 05</h1>
+    <div id="asCategories">
+        <div class="asCatContainer">
+            <span>Case 01</span>
+            <div class="buttons">
+                <button onclick="window.location.href='Case 01.html'">View</button>
+                <button onclick="window.location.href='https://github.com/DionFernando'">GitHub</button>
+            </div>
+        </div>
+        <div class="asCatContainer">
+            <span>Case 02</span>
+            <div class="buttons">
+                <button onclick="window.location.href='Case 02.html'">View</button>
+                <button onclick="window.location.href='https://github.com/DionFernando'">GitHub</button>
+            </div>
+        </div>
+        <div class="asCatContainer">
+            <span>Case 03</span>
+            <div class="buttons">
+                <button onclick="window.location.href='Case 03.html'">View</button>
+                <button onclick="window.location.href='https://github.com/DionFernando'">GitHub</button>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>

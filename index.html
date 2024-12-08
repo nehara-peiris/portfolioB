@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+
+    <link rel="icon" type="img/x-icon" href="assets/icons/Logo.png">
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="assets/style/normalize.css">
+
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+            rel="stylesheet">
+
+    <!--CDN-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Photo Gallery-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css">
+    <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Montserrat&amp;display=swap"rel="stylesheet"'>
+
+
+    <style>
+        /*Scroll*/
+        @keyframes scroll_image {
+            from {}
+
+            to {
+                transform: translateY(10px);
+            }
+        }
+
+        /*Gallery*/
+        @keyframes galleryAnimate {
+            0% {
+                transform: perspective(1000px) rotateY(0deg);
+            }
+
+            100% {
+                transform: perspective(1000px) rotateY(360deg);
+            }
+        }
+
+        @keyframes fadeBackground {
+            0% {
+                background-color: black;
+            }
+
+            50% {
+                background-color: #000B11;
+            }
+
+            100% {
+                background-color: black;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!--Sticky header-->
+    <div class="header">
+        <!--Logo-->
+        <div class="left">
+            <img src=" assets/icons/Logo.png" title="Logo" alt="Logo" width="55px">
+        </div>
+
+        <div class="right">
+
+            <!--Menu Icon-->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <img src="assets/icons/menu.png" alt="Menu" width="50px">
+            </div>
+
+            <!--Navigation Menu-->
+            <div class="navigation">
+                <a href="" class="nav-item">Home</a>
+                <a href="" class="nav-item">Gallery</a>
+                <a href="" class="nav-item">Education</a>
+                <a href="" class="nav-item">Skills</a>
+                <a href="" class="nav-item">Assignments</a>
+                <a href="" class="nav-item">Projects</a>
+                <a href="" class="nav-item">YouTube</a>
+                <a href="" class="nav-item">Photography</a>
+                <a href="" class="nav-item">Hire Me</a>
+            </div>
+        </div>
+    </div>
+
+
+    <!--scrollable container-->
+    <div class="scrollable">
+
+        <!---------------------Paralax Scene------------------------------>
+        <div class="paralax">
+            <div class="scrollable-content">
+
+                <!--Welcome-->
+                <div class="welcome">
+                    <div class="center">
+                        <div class="scroll-down">Scroll Down</div>
+                        <img class="scroll-down-image" src="assets/scroll.png" alt="scroll img" width="20px">
+                    </div>
+
+
+                    <div class="content">
+                        <div class="title1">
+                            <center>Welcome to My Portfolio</center>
+                        </div>
+                        <div class="title2">
+                            <center>Dion Fernando</center>
+                        </div>
+                        <div class="title3">Hey! I'm Dion Fernando</div>
+                        <div class="title4">Developer | UI UX Designer | YouTuber | Photographer</div>
+                        <button class="btn">Hire Me</button>
+
+                        <div class="content-footer">
+                            <!--Website Links-->
+                            <div>
+                                <img src="assets/icons/insta.png" title="Instagram" alt="Instagram" width="30px">
+                                <img src="assets/icons/facebook.png" title="Facebook" alt="Facebook" width="30px">
+                                <img src="assets/icons/twitter.png" title="Twitter" alt="Twitter" width="30px">
+                                <img src="assets/icons/likedin.png" title="LinkedIn" alt="LinkedIn" width="30px">
+                                <img src="assets/icons/github.png" title="GitHub" alt="GitHub" width="30px">
+                            </div>
+
+                            <!--My Image-->
+                            <div>
+                                <img src="assets/blazt.png" title="blazt" alt="blazt.img" width="450px"
+                                     class="blazt">
+                                <img src="assets/my-images/img1.png" title="Dion" alt="Dion.img" class="my-image">
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--end paralax scene-->
+
+        <!----------------------------- About Me ----------------------------->
+
+        <div class="about-me">
+            <center>
+                <span class="about">About</span><span class="me">Me</span>
+            </center>
+
+            <div class="content">
+                <div class="left">
+                    <img src="assets/my-images/bw.png" title="Dion" alt="Dion.img">
+                    <div class="img-wrapper"></div>
+                </div>
+
+                <div class="right">
+
+                    <div class="detail-box">
+                        <div class="left">
+                            <div class="row">
+                                <div class="title">Name</div>
+                                <div class="value">Kavisha Dion Fernando</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">Age</div>
+                                <div class="value">21</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">Nationality</div>
+                                <div class="value">Sri Lankan</div>
+                            </div>
+
+                        </div>
+                        <div class="right">
+                            <div class="row">
+                                <div class="title">Occupation</div>
+                                <div class="value">Full Stack Developer</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">Tel</div>
+                                <div class="value">+94 76 714 9543</div>
+                            </div>
+                            <div class="row">
+                                <div class="title">Email</div>
+                                <div class="value">dionfernando2003@gmal.com</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p>
+                        I wish to design and develop software according to daily updating new technologies.
+                        Therefore
+                        my
+                        vision is to provide high quality service to my clients in the future. Lorem ipsum dolor sit
+                        amet,
+                        consecteturadipisicing elit. Architecto beatae cum dolores in iure, laudantium maiores
+                        necessitatibus obcaecati possimus qui.Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit.
+                        Architecto beatae cum dolores in iure, laudantium maiores ecessitatibus
+                        obcaecati possimus qui.
+                    </p>
+
+                    <div class="row">
+                        <div class="vision">
+                            <div class="title">Vision</div>
+                            <div class="value">
+                                "To be a leading full stack developer, creating impactful projects
+                                that shape the future of
+                                technology."
+                            </div>
+                        </div>
+
+                        <div class="mission">
+                            <div class="title">Mission</div>
+                            <div class="value">
+                                "To develop innovative and efficient software solutions that enhance user
+                                experiences and
+                                drive
+                                business success."
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------- End About Me ----------------------------->
+
+        <!----------------------------- Photo Gallery ----------------------------->
+
+        <div class="photo-gallery">
+            <center>
+                <span class="photo">Photo</span><span class="gallery">Gallery</span>
+            </center>
+
+            <div class="content">
+                <div class="box">
+                    <span style="--i:1"><img src="assets/my-images/img2.webp"></span>
+                    <span style="--i:2"><img src="assets/my-images/img4.jpg"></span>
+                    <span style="--i:3"><img src="assets/my-images/img5.jpeg"></span>
+                    <span style="--i:4"><img src="assets/my-images/img9.jpg"></span>
+                    <span style="--i:5"><img src="assets/my-images/img14.jpeg"></span>
+                    <span style="--i:6"><img src="assets/my-images/img11.jpeg"></span>
+                    <span style="--i:7"><img src="assets/my-images/img12.jpeg"></span>
+                    <span style="--i:8"><img src="assets/my-images/img13.jpeg"></span>
+                </div>
+
+            </div>
+        </div>
+
+        <!----------------------------- End Photo Gallery ----------------------------->
+
+        <!----------------------------- Education ----------------------------->
+
+        <div class="education">
+            <center>
+                <span class="edu">Edu</span><span class="cation">Cation</span>
+            </center>
+
+            <div class="content">
+                <div class="left">
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ex porro maiores aperiam itaque
+                        dicta quibusdam vel explicabo, quos, distinctio facilis architecto? Ad impedit est maxime
+                        dolore officia ipsum nobis aperiam!
+                    </p>
+                    <img src="assets/education-brain.png" title="educational brain" alt="educational brain">
+                </div>
+                <div class="right">
+                    <div class="box-wrapper">
+                        <div class="box">
+                            <img src="assets/icons/book.png" title="icon" alt="icon">
+                            <div>2018</div>
+                            <div>GCE O/L Examination</div>
+                        </div>
+                        <div class="box">
+                            <img src="assets/icons/diploma.png" title="icon" alt="icon">
+                            <div>2021</div>
+                            <div>GCE A/L Examination</div>
+                        </div>
+                        <div class="box">
+                            <img src="assets/icons/graduation.png" title="icon" alt="icon">
+                            <div>2021</div>
+                            <div>GCE A/L Examination</div>
+                        </div>
+                        <div class="box">
+                            <img src="assets/icons/diploma.png" title="icon" alt="icon">
+                            <div>2020</div>
+                            <div>Diploma in Information Technology (DITEC)</div>
+                        </div>
+                        <div class="box">
+                            <img src="assets/icons/studentmale.png" title="icon" alt="icon">
+                            <div>2024</div>
+                            <div>Graduate Diploma in Software Engineering (GDSE)</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!----------------------------- End Education ----------------------------->
+
+        <!----------------------------- Education ----------------------------->
+
+        <div class="achievements">
+            <center>
+                <span class="achieve">Achieve</span><span class="ments">Ments</span>
+            </center>
+
+            <div class="content">
+
+                <div class="box-wrapper">
+                    <div class="box">
+                        <img src="assets/achievements/a4.jpeg" title="achievement" alt="achievement.img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a2.jpeg" title="achievement" alt="achievement.img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a3.jpeg" title="achievement" alt="achievement.img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a5.jpeg" title="achievement" alt="achievement.img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a9.jpeg" title="achievement" alt="achievement.img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a6.jpeg" title="achievement" alt="achievement.img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a7.jpeg" title="achievement" alt="achievement.img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a8.jpeg" title="achievement" alt="achievement.img">
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!----------------------------- End Education ----------------------------->
+
+        <!----------------------------- Projects ----------------------------->
+
+        <div class="projects">
+            <center>
+                <span class="pro">Pro</span><span class="jects">Jects</span>
+            </center>
+
+            <div class="content">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos blanditiis dolorum veniam
+                    nesciunt commodi ex voluptatum explicabo, sequi voluptatem ducimus velit. Consectetur enim nulla
+                    at saepe voluptas reprehenderit libero.
+                </p>
+
+                <div class="box-wrapper">
+                    <div class="box">
+                        <img src="assets/Stockmanage.jpg" title="Stock Management" alt="stock management img">
+                        <h4>Stock Management System</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                        <a href="https://github.com/DionFernando" target="_blank">
+                            <button>Go to Git</button>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a2.jpeg" title="achievement" alt="achievement.img">
+                        <h4>Connect 4 Game</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                        <a href="https://github.com/DionFernando" target="_blank">
+                            <button>Go to Git</button>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a3.jpeg" title="achievement" alt="achievement.img">
+                        <h4>Carnage Management System</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                        <a href="https://github.com/DionFernando" target="_blank">
+                            <button>Go to Git</button>
+                        </a>
+                    </div>
+                    <div class="box">
+                        <img src="assets/achievements/a5.jpeg" title="achievement" alt="achievement.img">
+                        <h4>Cashier Management System</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi aperiam cumque vel rerum
+                            nemo unde ullam est eius, veniam esse eum natus, debitis doloribus reiciendis temporibus
+                            voluptatem aliquam, veritatis ducimus.</p>
+                        <a href="https://github.com/DionFernando" target="_blank">
+                            <button>Go to Git</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------------- End Projects ----------------------------->
+
+
+    </div>
+    <!--end scrollable container-->
+</div>
+</body>
+
+</html>

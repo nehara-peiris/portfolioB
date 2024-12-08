@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 02</title>
+
+    <style>
+        section{
+            width: 800px;
+            height: 500px;
+            border: 5px solid green;
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+
+            animation: my-animation;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes my-animation {
+            0%{
+                margin: 0;
+            }
+            25%{
+                margin: 0px 700px;
+            }
+            50%{
+                margin: 400px 700px;
+            }
+            75%{
+                margin: 400px 0px;
+            }
+            100%{
+                margin: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<section>
+    <div></div>
+</section>
+
+</body>
+</html>

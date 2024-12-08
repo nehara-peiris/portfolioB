@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case 02</title>
+
+    <link rel="stylesheet" href="../../assets/style/normalize.css">
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+
+    <style>
+        /*---------------Header----------------*/
+        header {
+            border: 2px solid black;
+            height: 75px;
+            position: relative;
+        }
+
+        /* Position logo */
+        header>div {
+            position: absolute;
+            top: 10px;
+            left: 5px;
+        }
+
+        /* Style navigation */
+        header>nav>ul {
+            list-style: none;
+            position: absolute;
+            top: 10px;
+            right: 5px;
+
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        header>nav>ul>li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        /*--------------Layout---------------*/
+
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+
+        .container {
+            display: flex;
+            flex: 1;
+        }
+
+        /* Navigation Side */
+        section {
+            background-color: purple;
+            width: 300px;
+            padding: 20px;
+        }
+
+        section>div>nav>ul {
+            margin: 0;
+            list-style: none;
+        }
+
+        section>div>nav>ul>li {
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        /* Body */
+        main {
+            flex: 2;
+            padding: 20px;
+        }
+
+        main>div>img {
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+
+        main>div>p{
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        /*--------------Footer---------------*/
+        footer {
+            height: 30px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding-top: 5px;
+        }
+    </style>
+
+</head>
+<body>
+
+<!--Header-->
+<header>
+    <div>
+        <img src="assets/images/IJSE.png" alt="IJSE Logo" title="IJSE" height="60px">
+    </div>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Service</li>
+            <li>Contacts</li>
+            <li>About Us</li>
+        </ul>
+    </nav>
+</header>
+
+<div class="container">
+    <!--Navigation side-->
+    <section>
+        <div>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Service</li>
+                    <li>Contacts</li>
+                    <li>About Us</li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <!--Body-->
+    <main>
+        <!--Gifs-->
+        <div>
+            <img src="assets/videos/character-13952_256.gif">
+            <img src="assets/videos/character-13952_256.gif">
+            <img src="assets/videos/character-13952_256.gif">
+        </div>
+
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores necessitatibus numquam optio praesentium quas reprehenderit sed. Asperiores debitis dolore dolorem non quos sit suscipit vitae? Amet dolorum sunt voluptate.</p>
+
+        </div>
+    </main>
+</div>
+
+<!--footer-->
+<footer>
+    <span>Designed By IJSE</span>
+</footer>
+
+</body>
+</html>
