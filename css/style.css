@@ -15,40 +15,93 @@ body {
     width: 100%;
     min-height: 100vh;
 
-    .header {
+
+    header {
+        background: #000000;
+        color: #ffffff;
+        height: 10%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+
+    }
+
+    .header-content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 0 20px;
+    }
 
-        .right {
+    .header-content img {
+        margin-left: 1rem;
+    }
 
-            .menu-icon{
-                display: none;
+    header nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0 1rem;
+    }
 
-                @media screen and (max-width: 768px) {
-                    display: block;
-                    font-size: 20px;
-                    cursor: pointer;
-                }
-            }
+    .menu-icon {
+        display: none;
+        cursor: pointer;
+    }
 
-            .navigation {
-                display: flex;
-                gap: 30px;
+    /* Desktop styles for the navigation menu */
+    #nav-links {
+        display: flex;
+        gap: 1.5rem;
 
-                a {
-                    text-decoration: none;
-                    color: white;
+    }
 
-                }
+    #nav-links a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+        position: relative;
+    }
 
-                @media screen and (max-width: 768px) {
-                    display: none;
-                }
-            }
+    #nav-links a:hover::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 0.18rem;
+        background-color: #0056b3;
+        left: 0;
+        bottom: -0.25rem;
+    }
+
+    /* Mobile styles */
+    @media (max-width: 768px) {
+        #nav-links {
+            display: none; /* Hide by default on mobile */
+            flex-direction: column;
+            background-color: black;
+            position: absolute;
+            top: 100px;
+            right: 0;
+            width: 100%;
+        }
+
+        .menu-icon {
+            display: block;
+            cursor: pointer;
+        }
+
+        #nav-links.show-menu {
+            display: flex !important; /* Show when 'show-menu' class is added */
+        }
+
+        #nav-links a {
+            padding: 1rem;
+            text-align: center;
+            display: block;
         }
     }
+
+
 
     .scrollable{
         overflow-y: auto;
