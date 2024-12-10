@@ -127,7 +127,7 @@ header nav a {
     }
 
     #nav-links a {
-        padding: 1rem;
+        padding: 0.5rem;
         text-align: center;
         display: block;
     }
