@@ -412,6 +412,22 @@ header nav a {
             .left {
                 width: 80%;
                 padding: 2rem;
+
+                img {
+                    width: 70%;
+                    z-index: 1;
+                }
+
+                .img-wrapper {
+                    width: 70%;
+                    height: 600px;
+                    background: rgba(0, 240, 255, 0.5);
+                    border-top-right-radius: 25%;
+                    border-bottom-left-radius: 25%;
+                    margin-top: -107%;
+                    margin-left: 7%;
+                }
+
             }
 
             .right {
