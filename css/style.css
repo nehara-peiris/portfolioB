@@ -102,6 +102,11 @@ header nav a {
 }
 
 @media (max-width: 425px) {
+    header{
+        height: 10%;
+        width: 100%;
+    }
+
     #nav-links {
         display: none; /* Hide by default on mobile */
         flex-direction: column;
