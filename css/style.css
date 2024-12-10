@@ -103,7 +103,7 @@ header nav a {
 
 @media (max-width: 425px) {
     header{
-        height: 5%;
+        height: 10%;
         width: 100%;
     }
 
