@@ -78,22 +78,23 @@
     <!--Sticky header-->
     <header>
         <div class="header-content">
-            <!--Logo-->
             <a href="index.html">
                 <img src=" assets/icons/Logo.png" title="Logo" alt="Logo" width="55px">
             </a>
 
+            <!-- Menu Icon -->
             <div class="menu-icon" onclick="toggleMenu()">
                 <img src="assets/icons/menu.png" alt="Menu" width="50px">
             </div>
 
+            <!-- Navigation links -->
             <nav id="nav-links">
                 <a href="">Home</a>
-                <a href="">Gallery</a>
-                <a href="">Education</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#education">Education</a>
                 <a href="">Skills</a>
                 <a href="">Assignments</a>
-                <a href="">Projects</a>
+                <a href="#projects">Projects</a>
                 <a href="">YouTube</a>
                 <a href="">Photography</a>
                 <a href="">Hire Me</a>
@@ -150,13 +151,11 @@
             </div>
         </div>
         <!--end paralax scene-->
-
         <!----------------------------- About Me ----------------------------->
 
         <div class="about-me">
-            <center>
-                <span class="about">About</span><span class="me">Me</span>
-            </center>
+
+            <p><span class="about">About</span><span class="me">Me</span></p>
 
             <div class="content">
                 <div class="left">
@@ -239,7 +238,7 @@
 
         <!----------------------------- Photo Gallery ----------------------------->
 
-        <div class="photo-gallery">
+        <div class="photo-gallery" id="gallery">
             <center>
                 <span class="photo">Photo</span><span class="gallery">Gallery</span>
             </center>
@@ -263,7 +262,7 @@
 
         <!----------------------------- Education ----------------------------->
 
-        <div class="education">
+        <div class="education" id="education">
             <center>
                 <span class="edu">Edu</span><span class="cation">Cation</span>
             </center>
@@ -379,7 +378,7 @@
 
         <!----------------------------- Projects ----------------------------->
 
-        <div class="projects">
+        <div class="projects" id="projects">
             <center>
                 <span class="pro">Pro</span><span class="jects">Jects</span>
             </center>
@@ -462,6 +461,7 @@
         });
     });
 </script>
+
 
 
 </body>
