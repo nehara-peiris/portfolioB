@@ -102,11 +102,6 @@ header nav a {
 }
 
 @media (max-width: 425px) {
-    header{
-        height: 10%;
-        width: 100%;
-    }
-
     #nav-links {
         display: none; /* Hide by default on mobile */
         flex-direction: column;
@@ -396,6 +391,33 @@ header nav a {
                     .title{
                         color: #00F0FF;
                     }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .about-me {
+
+        .content {
+            display: flex;
+            flex-direction: column;
+
+            .left {
+                width: 80%;
+                padding: 2rem;
+            }
+
+            .right {
+
+                .detail-box {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .vm{
+                    flex-direction: column;
                 }
             }
         }
