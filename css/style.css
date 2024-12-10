@@ -401,50 +401,141 @@ header nav a {
         }
     }
 }
+/*
 
 @media (max-width: 425px) {
-    .about-me {
+    .about-me{
+        margin-top: 100px;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
 
-        .content {
+        .content{
             display: flex;
             flex-direction: column;
 
-            .left {
-                width: 80%;
-                padding: 2rem;
+            .left{
+                width: 90%;
+                padding: 20px;
 
-                img {
-                    width: 70%;
-                    z-index: 1;
+                img{
+                    width: 90%;
                 }
 
-                .img-wrapper {
-                    width: 70%;
-                    height: 600px;
-                    background: rgba(0, 240, 255, 0.5);
-                    border-top-right-radius: 25%;
-                    border-bottom-left-radius: 25%;
-                    margin-top: -107%;
-                    margin-left: 7%;
-                }
+                .img-wrapper{
 
-            }
-
-            .right {
-
-                .detail-box {
-                    display: flex;
-                    flex-direction: column;
-                }
-
-                .vm{
-                    flex-direction: column;
                 }
             }
         }
     }
 }
 
+*/
 
+@media (max-width: 768px) {
+    .about-me {
+        margin-top: 50px; /* Reduce top margin */
+    }
+
+    .about-me .content {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+    }
+
+    .about-me .content .left,
+    .about-me .content .right {
+        width: 100%; /* Make left and right take full width */
+        padding: 1rem; /* Adjust padding */
+    }
+
+    .about-me .content .left img {
+        width: 100%; /* Make image responsive */
+    }
+
+    .about-me .content .left .img-wrapper {
+        width: 100%;
+        height: 70%;
+        margin-top: -80%; /* Adjust positioning */
+        margin-left: 0;
+    }
+
+    .about-me .right .detail-box {
+        flex-direction: column; /* Stack detail-box content vertically */
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .about-me .right .detail-box .row {
+        gap: 10px;
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .about-me .right p,
+    .about-me .right .vm {
+        width: 100%; /* Full width for text */
+    }
+
+    .about-me .right .vm {
+        flex-direction: column; /* Stack Vision and Mission */
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 425px) {
+    .about-me {
+        margin-top: 30px; /* Further reduce margin */
+    }
+
+    .about-me .about {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    .about-me .me {
+        font-size: 32px; /* Smaller font size */
+    }
+
+    .about-me .content .left,
+    .about-me .content .right {
+        padding: 0.5rem; /* Reduce padding */
+    }
+
+    .about-me .content .left img {
+        width: 100%; /* Fully responsive image */
+    }
+
+    .about-me .content .left .img-wrapper {
+        height: 60%; /* Adjust wrapper size */
+        margin-top: -70%; /* Adjust positioning */
+    }
+
+    .about-me .right .detail-box {
+        gap: 5px; /* Smaller gaps */
+        padding: 5px; /* Smaller padding */
+        font-size: 16px;
+    }
+
+    .about-me .right .detail-box .row {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .about-me .right p {
+        font-size: 14px; /* Adjust text size */
+        padding: 0.5rem;
+    }
+
+    .about-me .right .vm {
+        gap: 5px; /* Reduce gaps */
+    }
+
+    .about-me .right .vm .title {
+        font-size: 16px; /* Smaller title size */
+    }
+
+    .about-me .right .vm .value {
+        font-size: 14px; /* Adjust value size */
+    }
+}
 
 
