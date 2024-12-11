@@ -1221,8 +1221,12 @@ header nav a {
         }
 
         #projects #projTopic {
-            font-size: 24px;
+            font-size: 28px;
             margin-top: 60px;
+
+            p{
+                font-size: 20px;
+            }
         }
 
         #projects #projContainers {
@@ -1240,6 +1244,10 @@ header nav a {
     @media (max-width: 480px) {
         #projects #projTopic {
             font-size: 20px;
+
+            p{
+                font-size: 10px;
+            }
         }
 
         #projects #projContainers .projCont a > button {
