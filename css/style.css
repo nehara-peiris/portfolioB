@@ -1377,54 +1377,69 @@ header nav a {
     }
 
     @media (max-width: 768px) {
-        #ytSection {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
+        #youtube {
+            padding: 10px;
 
-        #ytTopic h1 {
-            font-size: 1.5rem;
-        }
+            #ytTopic {
+                flex-direction: column;
+                text-align: center;
 
-        .ytSec {
-            padding: 15px;
-            max-width: 80%;
-        }
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
 
-        .ytVideo a img:first-child {
-            height: auto;
-        }
+                h1 {
+                    font-size: 2rem; /* Smaller font size */
+                }
+            }
 
-        #ytTopic img {
-            width: 60px;
-            height: 60px;
+            #ytSection {
+                display: flex;
+                flex-direction: column; /* Stack sections vertically */
+                gap: 20px;
+
+                .ytSec {
+                    padding: 15px;
+
+                    div:first-child {
+                        flex-direction: column; /* Stack logo and title */
+                        gap: 5px;
+
+                        h3 {
+                            font-size: 1.2rem; /* Adjust heading size */
+                        }
+
+                        img {
+                            width: 50px; /* Smaller logo */
+                        }
+                    }
+
+                    .ytVideo a img:first-child {
+                        height: auto; /* Adjust image height automatically */
+                        max-width: 100%; /* Full width for smaller screens */
+                        border-width: 3px; /* Thinner border */
+                    }
+
+                    .ytVideo a img:nth-child(2) {
+                        width: 40px; /* Smaller YouTube icon */
+                    }
+
+                    p {
+                        font-size: 0.8rem; /* Reduce paragraph font size */
+                        line-height: 1.3;
+                    }
+
+                    button {
+                        width: 120px; /* Smaller button */
+                        height: 30px;
+                        font-size: 0.9rem;
+                    }
+                }
+            }
         }
     }
 
-    @media (max-width: 480px) {
-        #ytTopic h1 {
-            font-size: 1.8rem;
-        }
-
-        #ytTopic img {
-            width: 50px;
-            height: 50px;
-        }
-
-        .ytSec h3 {
-            font-size: 1.2rem;
-        }
-
-        .ytSec p {
-            font-size: 0.8rem;
-        }
-
-        .ytSec button {
-            width: 120px;
-            height: 30px;
-            font-size: 0.9rem;
-        }
-    }
 
 }
 
