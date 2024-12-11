@@ -541,17 +541,17 @@ header nav a {
         .photo-gallery {
             margin-top: 20px;
             min-height: auto;
-            padding: 15px; /* Add padding to the gallery */
+            padding: 10px; /* Reduce padding */
         }
 
         .photo {
-            font-size: 20px; /* Smaller font size */
+            font-size: 18px; /* Smaller font size */
             text-align: center;
             margin-right: 0;
         }
 
         .gallery {
-            font-size: 28px; /* Smaller font size */
+            font-size: 24px; /* Smaller font size */
             text-align: center;
         }
 
@@ -560,14 +560,14 @@ header nav a {
             flex-direction: column; /* Stack boxes vertically */
             align-items: center;
             justify-content: center;
-            gap: 10px; /* Reduced gap between boxes */
-            margin-bottom: 30px;
-            padding: 10px;
+            gap: 5px; /* Reduced gap between boxes */
+            margin-bottom: 20px;
+            padding: 5px;
         }
 
         .box {
-            width: 100px; /* Further reduced width */
-            height: 100px; /* Further reduced height */
+            width: 80px; /* Even smaller width */
+            height: 80px; /* Even smaller height */
             transform: none; /* Removed 3D effect */
             animation: none; /* Disable animation */
         }
@@ -579,13 +579,12 @@ header nav a {
 
         .box span img {
             width: 100%; /* Make images responsive */
-            height: 100%; /* Make sure images fill the box */
+            height: 100%; /* Ensure images fill the box */
             object-fit: cover; /* Ensure the image covers the box */
             top: 0;
             left: 0;
         }
     }
-
 
 }
 
