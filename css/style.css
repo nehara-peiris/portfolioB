@@ -701,6 +701,7 @@ header nav a {
                     height: auto;
                     font-size: 14px;
                     font-family: 'Inter';
+                    padding-bottom: 50px;
 
                     img {
                         width: 280px;
