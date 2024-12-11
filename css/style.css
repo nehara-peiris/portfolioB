@@ -435,9 +435,9 @@ header nav a {
             background: rgba(0, 240, 255, 0.5);
             border-top-right-radius: 25%;
             border-bottom-left-radius: 25%;
-            margin-bottom: -150px;
             margin-top: -107%;
             margin-left: 7%;
+            margin-bottom: 500px;
         }
 
         .about-me .content .right {
