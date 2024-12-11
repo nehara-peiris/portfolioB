@@ -1267,69 +1267,75 @@ header nav a {
 
 
     #youtube {
-        min-height: 60vh;
+        min-height: 100vh;
         background: linear-gradient(#000000, #000000, #000000, #5e0303);
-
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-        min-height: 100vh;
-
-        color: white;
-
+        padding: 20px;
 
         #ytTopic {
-            color: white;
-            margin-top: 30px;
-
             display: flex;
             align-items: center;
             justify-content: center;
+            gap: 10px;
+            margin-bottom: 40px;
 
             img {
                 width: 75px;
                 height: 75px;
             }
+
+            h1 {
+                font-size: 2.5rem;
+            }
         }
-
         #ytSection {
-            height: 50vh;
-            margin-top: 80px;
-
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 40px;
+            width: 100%;
+            max-width: 1200px;
+
+
+
+
 
             .ytSec {
-                width: 500px;
-
                 text-align: center;
+                background: rgba(255, 255, 255, 0.05);
+                padding: 20px;
+                border-radius: 10px;
 
                 div:first-child {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     gap: 10px;
-                }
 
-                div:first-child > img {
-                    width: 65px;
-                    border-radius: 100%;
+                    h3 {
+                        font-size: 1.5rem;
+                    }
+
+                    img {
+                        width: 65px;
+                        border-radius: 100%;
+                    }
                 }
 
                 .ytVideo {
                     margin-top: 20px;
+                    position: relative;
 
                     a {
                         img:first-child {
-                            width: 450px;
+                            width: 100%;
+                            max-width: 450px;
                             height: 250px;
-
+                            object-fit: cover;
                             border: 5px solid red;
                             border-radius: 20px;
-
-                            object-fit: cover;
+                            transition: box-shadow 0.3s ease, filter 0.3s ease;
                         }
 
                         img:first-child:hover {
@@ -1338,43 +1344,95 @@ header nav a {
                         }
 
                         img:nth-child(2) {
+                            position: absolute;
                             width: 50px;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
                         }
-
                     }
                 }
 
-                div:nth-child(3) > p {
-                    font-size: 12px;
-                    margin-top: 30px;
-
-                    font-family: 'Inter';
-                    font-weight: 100;
+                p {
+                    font-size: 0.9rem;
+                    margin-top: 20px;
+                    line-height: 1.5;
                 }
 
                 button {
-                    width: 150px;
-                    height: 30px;
-                    border-radius: 30px;
-                    border: 2px solid #FF0000;
-                    background: rgba(0, 0, 0, 0.3);
-                    color: red;
-                    font-size: 14px;
                     margin-top: 10px;
+                    width: 150px;
+                    height: 35px;
+                    border-radius: 20px;
+                    border: 2px solid #FF0000;
+                    background: transparent;
+                    color: #FF0000;
+                    font-size: 1rem;
+                    cursor: pointer;
+                    transition: all 0.3s ease;
                 }
 
                 button:hover {
                     background: #FF0000;
                     color: white;
-                    box-shadow: 0 0 20px #FF0000;
+                    box-shadow: 0 0 10px #FF0000;
                 }
             }
+        }
 
-            ytSec:nth-child(2) > div:first-child > img {
-                border: 1px solid lime;
-            }
+    }
+
+    @media (max-width: 768px) {
+        #ytSection {
+            grid-template-columns: 1fr; /* Single column layout */
+            gap: 20px;
+        }
+
+        #ytTopic h1 {
+            font-size: 2rem;
+        }
+
+        .ytSec {
+            padding: 15px;
+        }
+
+        .ytVideo a img:first-child {
+            height: auto; /* Auto height for images */
+        }
+
+        #ytTopic img {
+            width: 60px;
+            height: 60px;
         }
     }
+
+    @media (max-width: 480px) {
+        #ytTopic h1 {
+            font-size: 1.8rem;
+        }
+
+        #ytTopic img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .ytSec h3 {
+            font-size: 1.2rem;
+        }
+
+        .ytSec p {
+            font-size: 0.8rem;
+        }
+
+        .ytSec button {
+            width: 120px;
+            height: 30px;
+            font-size: 0.9rem;
+        }
+    }
+
+
+
 }
 
 
