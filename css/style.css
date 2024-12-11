@@ -1026,6 +1026,7 @@ header nav a {
         #asTopic {
             color: #50DBEE;
             text-align: center;
+            margin-top: 100px;
 
             h1 {
                 font-family: 'Inter';
@@ -1132,9 +1133,7 @@ header nav a {
 
         #projTopic {
             color: #50DBEE;
-            font-size: 40px;
             text-align: center;
-            width: 90%;
             margin-top: 100px;
 
             div {
@@ -1220,12 +1219,18 @@ header nav a {
             padding: 20px;
         }
 
-        #projects #projTopic {
-            font-size: 28px;
-            margin-top: 60px;
+        #projTopic {
+            div{
+                font-family: 'Inter';
+                font-weight: 800;
+            }
 
             p{
-                font-size: 20px;
+                color: white;
+                font-size: 14px;
+                font-family: 'Inter';
+                font-weight: 100;
+                margin-top: 10px;
             }
         }
 
