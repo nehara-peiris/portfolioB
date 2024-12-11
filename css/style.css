@@ -403,83 +403,70 @@ header nav a {
 
     @media (max-width: 768px) {
         .about-me {
-            margin-top: 300px;
-            display: flex;
+            margin-top: 20px;
             flex-direction: column;
             align-items: center;
+        }
 
-            p {
-                margin: 0 auto;
-                text-align: center;
-            }
+        .about-me p {
+            margin: 0 auto;
+            text-align: center;
+        }
 
-            .content {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                width: 90%;
+        .about-me .content {
+            flex-direction: column;
+            align-items: center;
+            width: 90%;
+        }
 
-                .left {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 100%;
+        .about-me .content .left {
+            width: 100%;
+            align-items: center;
+        }
 
-                    img {
-                        width: 70%;
-                        z-index: 1; /* Ensure the image stays on top */
-                    }
+        .about-me .content .left img {
+            width: 70%;
+            z-index: 1;
+        }
 
-                    .img-wrapper {
-                        width: 70%;
-                        height: 250px;
-                        background: rgba(0, 240, 255, 0.5);
-                        border-top-right-radius: 25%;
-                        border-bottom-left-radius: 25%;
-                        margin-bottom: -150px; /* Lift wrapper upward */
-                    }
-                }
+        .about-me .content .left .img-wrapper {
+            width: 70%;
+            height: 250px;
+            background: rgba(0, 240, 255, 0.5);
+            border-top-right-radius: 25%;
+            border-bottom-left-radius: 25%;
+            margin-bottom: -150px;
+        }
 
-                .right {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    width: 90%;
+        .about-me .content .right {
+            width: 100%;
+            align-items: center;
+        }
 
-                    .detail-box {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        width: 100%;
-                        padding: 20px;
-                        border: 2px solid #00F0FF;
-                        border-radius: 15px;
-                        background: rgba(0, 240, 255, 0.09);
-                        margin-bottom: 20px;
+        .about-me .content .right .detail-box {
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 20px;
+            border: 2px solid #00F0FF;
+            border-radius: 15px;
+            background: rgba(0, 240, 255, 0.09);
+        }
 
-                        .details {
-                            display: flex;
-                            flex-direction: column;
+        .about-me .content .right .detail-box .details {
+            flex-direction: column;
+            gap: 5px;
+        }
 
-                            .row {
-                                display: flex;
-                                flex-direction: column;
-                                gap: 5px;
-                            }
-                        }
-                    }
-
-                    .vm {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 20px;
-                        width: 100%;
-                        text-align: center;
-                    }
-                }
-            }
+        .about-me .content .right .vm {
+            flex-direction: column;
+            gap: 20px;
+            width: 100%;
+            text-align: center;
         }
     }
+
 }
 
 
