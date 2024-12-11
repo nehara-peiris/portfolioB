@@ -675,34 +675,20 @@ header nav a {
     .achievements {
         margin-top: 30px;
 
-        .achieve {
+        h1 {
             font-size: 32px;
-            color: white;
-            font-family: 'Inter';
-            font-weight: 400;
-        }
-
-        .ments {
-            font-size: 48px;
             color: #50DBEE;
             font-family: 'Inter';
-            font-weight: 700;
+            font-weight: bold;
         }
 
-
         .content {
-
-            display: flex;
-            justify-content: center;
-            padding: 30px;
-            gap: 40px;
+            width: 90%;
 
             .box-wrapper{
-                display: flex;
-                gap: 30px;
-                flex-wrap: wrap;
-                justify-content: center;
-                align-items: center;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+                gap: 1.5rem;
 
                 .box {
                     display: flex;
@@ -718,7 +704,7 @@ header nav a {
 
                     img {
                         width: 300px;
-                        height: 250px;
+                        height: 280px;
                         border-radius: 15px;
                         box-shadow: rgba(0, 255, 255, 0.2) 0px 5px 15px;
                     }
