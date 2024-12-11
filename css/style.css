@@ -1293,12 +1293,7 @@ header nav a {
         #ytSection {
             display: grid;
             gap: 40px;
-            width: 100%;
-            max-width: 1200px;
-
-
-
-
+            max-width: 90%;
 
             .ytSec {
                 text-align: center;
