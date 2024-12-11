@@ -1132,15 +1132,15 @@ header nav a {
         align-items: center;
 
         #projTopic {
-            color: #50DBEE;
             text-align: center;
             margin-top: 100px;
 
-            div {
+            h1 {
+                color: #50DBEE;
                 font-family: 'Inter';
                 font-weight: 800;
             }
-            p {
+            h5 {
                 color: white;
                 font-size: 14px;
                 font-family: 'Inter';
@@ -1220,14 +1220,15 @@ header nav a {
         }
 
         #projTopic {
-            div{
+            h1{
+                color: #50DBEE;
                 font-family: 'Inter';
                 font-weight: 800;
             }
 
-            p{
+            h5{
                 color: white;
-                font-size: 14px;
+                font-size: 10px;
                 font-family: 'Inter';
                 font-weight: 100;
                 margin-top: 10px;
@@ -1250,7 +1251,7 @@ header nav a {
         #projects #projTopic {
             font-size: 20px;
 
-            p{
+            h5{
                 font-size: 10px;
             }
         }
