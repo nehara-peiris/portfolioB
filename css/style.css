@@ -657,7 +657,7 @@ header nav a {
                 flex-direction: column;
 
                 .left img{
-                    width: 70%;
+                    width: 80%;
                 }
 
                 .right .box-wrapper{
@@ -665,7 +665,7 @@ header nav a {
                     justify-content: center;
                     align-items: center;
                     flex-wrap: wrap;
-                    gap: 1.5rem;
+                    gap: 1rem;
                 }
             }
         }
