@@ -473,6 +473,7 @@ header nav a {
         }
     }
 
+/*
     .photo-gallery {
         min-height: 50vh;
         margin-top: 30px;
@@ -523,7 +524,7 @@ header nav a {
                 transform-style: preserve-3d;
                 transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
                 -webkit-box-reflect: below 0px -webkit-linear-gradient(transparent, transparent, #0004);
-                /* margin-bottom: 50px; */
+                !* margin-bottom: 50px; *!
             }
 
             .box span img {
@@ -541,50 +542,123 @@ header nav a {
         .photo-gallery {
             margin-top: 20px;
             min-height: auto;
-            padding: 10px; /* Reduce padding */
+            padding: 10px; !* Reduce padding *!
         }
 
         .photo {
-            font-size: 18px; /* Smaller font size */
+            font-size: 18px; !* Smaller font size *!
             text-align: center;
             margin-right: 0;
         }
 
         .gallery {
-            font-size: 24px; /* Smaller font size */
+            font-size: 24px; !* Smaller font size *!
             text-align: center;
         }
 
         .content {
             display: flex;
-            flex-direction: column; /* Stack boxes vertically */
+            flex-direction: column; !* Stack boxes vertically *!
             align-items: center;
             justify-content: center;
-            gap: 5px; /* Reduced gap between boxes */
+            gap: 5px; !* Reduced gap between boxes *!
             margin-bottom: 20px;
             padding: 5px;
         }
 
         .box {
-            width: 80px; /* Even smaller width */
-            height: 80px; /* Even smaller height */
-            transform: none; /* Removed 3D effect */
-            animation: none; /* Disable animation */
+            width: 80px; !* Even smaller width *!
+            height: 80px; !* Even smaller height *!
+            transform: none; !* Removed 3D effect *!
+            animation: none; !* Disable animation *!
         }
 
         .box span {
-            transform: none; /* Removed 3D translation */
+            transform: none; !* Removed 3D translation *!
             position: relative;
         }
 
         .box span img {
-            width: 100%; /* Make images responsive */
-            height: 100%; /* Ensure images fill the box */
-            object-fit: cover; /* Ensure the image covers the box */
+            width: 100%; !* Make images responsive *!
+            height: 100%; !* Ensure images fill the box *!
+            object-fit: cover; !* Ensure the image covers the box *!
             top: 0;
             left: 0;
         }
     }
+
+    */
+
+    .education {
+        margin-top: 80px;
+
+        .edu {
+            font-size: 32px;
+            color: #50DBEE ;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            padding: 30px;
+            gap: 40px;
+
+            .left {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                img {
+                    width: 300px;
+                }
+            }
+
+            .right {
+                flex: 2;
+
+                .box-wrapper {
+
+                    display: flex;
+                    gap: 30px;
+                    flex-wrap: wrap;
+                    justify-content: center;
+
+
+                    .box {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+                        align-items: center;
+                        background: #011D26;
+                        border: 2px solid #00FFFF;
+                        border-radius: 30px;
+                        padding: 20px;
+                        text-align: center;
+                        max-width: 150px;
+                        height: auto;
+
+                        img {
+                            width: 55px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 768px){
+        .education{
+            .content{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+
 
 }
 
