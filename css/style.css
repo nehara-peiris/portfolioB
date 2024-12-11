@@ -1292,7 +1292,6 @@ header nav a {
         }
         #ytSection {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
             gap: 40px;
             width: 100%;
             max-width: 1200px;
@@ -1430,7 +1429,6 @@ header nav a {
             font-size: 0.9rem;
         }
     }
-
 
 }
 
