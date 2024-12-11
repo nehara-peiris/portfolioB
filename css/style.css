@@ -425,12 +425,12 @@ header nav a {
         }
 
         .about-me .content .left img {
-            width: 70%;
+            width: 90%;
             z-index: 1;
         }
 
         .about-me .content .left .img-wrapper {
-            width: 70%;
+            width: 90%;
             height: 250px;
             background: rgba(0, 240, 255, 0.5);
             border-top-right-radius: 25%;
