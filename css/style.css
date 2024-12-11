@@ -1339,8 +1339,6 @@ header nav a {
 
                         img:nth-child(2) {
                             width: 50px;
-                            margin-top: -135px; /* Center play button vertically */
-                            margin-left: -25px; /* Center play button horizontally */
                         }
 
                     }
