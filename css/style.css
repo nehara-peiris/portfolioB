@@ -1157,7 +1157,7 @@ header nav a {
             grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
             justify-items: center;
             gap: 70px;
-            margin-top: 50px;
+            margin-top: 40px;
 
             .projCont {
                 width: 400px;
@@ -1174,7 +1174,7 @@ header nav a {
                 color: white;
 
                 div > img {
-                    width: 300px;
+                    width: 90%;
                     border-radius: 20px;
                     margin-top: 10px;
                 }
