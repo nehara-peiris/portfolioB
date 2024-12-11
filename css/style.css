@@ -1266,7 +1266,117 @@ header nav a {
     }
 
 
+    #youtube {
+        min-height: 60vh;
+        background: linear-gradient(#000000, #000000, #000000, #5e0303);
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+
+        color: white;
+
+
+        #ytTopic {
+            color: white;
+            margin-top: 30px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 75px;
+                height: 75px;
+            }
+        }
+
+        #ytSection {
+            height: 50vh;
+            margin-top: 80px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+
+            .ytSec {
+                width: 500px;
+
+                text-align: center;
+
+                div:first-child {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                }
+
+                div:first-child > img {
+                    width: 65px;
+                    border-radius: 100%;
+                }
+
+                .ytVideo {
+                    margin-top: 20px;
+
+                    a {
+                        img:first-child {
+                            width: 450px;
+                            height: 250px;
+
+                            border: 5px solid red;
+                            border-radius: 20px;
+
+                            object-fit: cover;
+                        }
+
+                        img:first-child:hover {
+                            box-shadow: 0 0 20px red;
+                            filter: brightness(0.8);
+                        }
+
+                        img:nth-child(2) {
+                            width: 50px;
+                            margin-top: -135px; /* Center play button vertically */
+                            margin-left: -25px; /* Center play button horizontally */
+                        }
+
+                    }
+                }
+
+                div:nth-child(3) > p {
+                    font-size: 12px;
+                    margin-top: 30px;
+
+                    font-family: 'Inter';
+                    font-weight: 100;
+                }
+
+                button {
+                    width: 150px;
+                    height: 30px;
+                    border-radius: 30px;
+                    border: 2px solid #FF0000;
+                    background: rgba(0, 0, 0, 0.3);
+                    color: red;
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+
+                button:hover {
+                    background: #FF0000;
+                    color: white;
+                    box-shadow: 0 0 20px #FF0000;
+                }
+            }
+
+            ytSec:nth-child(2) > div:first-child > img {
+                border: 1px solid lime;
+            }
+        }
+    }
 }
 
 
