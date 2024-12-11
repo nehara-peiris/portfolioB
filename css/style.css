@@ -473,10 +473,10 @@ header nav a {
         }
     }
 
-/*
     .photo-gallery {
         min-height: 50vh;
         margin-top: 30px;
+        overflow: hidden;
 
         .photo {
             font-size: 32px;
@@ -524,7 +524,6 @@ header nav a {
                 transform-style: preserve-3d;
                 transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
                 -webkit-box-reflect: below 0px -webkit-linear-gradient(transparent, transparent, #0004);
-                !* margin-bottom: 50px; *!
             }
 
             .box span img {
@@ -542,52 +541,52 @@ header nav a {
         .photo-gallery {
             margin-top: 20px;
             min-height: auto;
-            padding: 10px; !* Reduce padding *!
+            padding: 10px;
+            overflow: hidden;
         }
 
         .photo {
-            font-size: 18px; !* Smaller font size *!
+            font-size: 18px;
             text-align: center;
             margin-right: 0;
         }
 
         .gallery {
-            font-size: 24px; !* Smaller font size *!
+            font-size: 24px;
             text-align: center;
         }
 
         .content {
             display: flex;
-            flex-direction: column; !* Stack boxes vertically *!
+            flex-direction: column;
             align-items: center;
             justify-content: center;
-            gap: 5px; !* Reduced gap between boxes *!
+            gap: 5px;
             margin-bottom: 20px;
             padding: 5px;
         }
 
         .box {
-            width: 80px; !* Even smaller width *!
-            height: 80px; !* Even smaller height *!
-            transform: none; !* Removed 3D effect *!
-            animation: none; !* Disable animation *!
+            width: 80px;
+            height: 80px;
+            transform: none;
+            animation: none;
         }
 
         .box span {
-            transform: none; !* Removed 3D translation *!
+            transform: none;
             position: relative;
         }
 
         .box span img {
-            width: 100%; !* Make images responsive *!
-            height: 100%; !* Ensure images fill the box *!
-            object-fit: cover; !* Ensure the image covers the box *!
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
             top: 0;
             left: 0;
         }
     }
 
-    */
 
     #education {
         .edu {
