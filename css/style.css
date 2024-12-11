@@ -494,7 +494,6 @@ header nav a {
 
 
         .content {
-
             display: flex;
             justify-content: center;
             align-items: center;
@@ -541,7 +540,7 @@ header nav a {
     @media (max-width: 768px) {
         .photo-gallery {
             margin-top: 20px; /* Reduce top margin for smaller screens */
-            min-height: auto; /* Adjust height to fit content */
+            min-height: 60vh; /* Adjust height to fit content */
 
             .photo {
                 font-size: 24px; /* Decrease font size */
@@ -574,15 +573,13 @@ header nav a {
             }
 
             .box span img {
-                width: 100%; /* Make images responsive */
+                width: 90%; /* Make images responsive */
                 height: auto;
                 top: 0;
                 left: 0;
             }
         }
     }
-
-
 }
 
 
