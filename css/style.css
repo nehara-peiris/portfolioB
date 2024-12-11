@@ -437,7 +437,7 @@ header nav a {
             border-bottom-left-radius: 25%;
             margin-top: -107%;
             margin-left: 7%;
-            margin-bottom: 100px;
+            margin-bottom: 80px;
         }
 
         .about-me .content .right {
@@ -459,7 +459,10 @@ header nav a {
         .about-me .content .right .detail-box .details {
             flex-direction: column;
             gap: 5px;
-            font-size: 10px;
+        }
+
+        .about-me .content .right .detail-box .details .row{
+            font-size: small;
         }
 
         .about-me .content .right .vm {
@@ -467,6 +470,71 @@ header nav a {
             gap: 20px;
             width: 100%;
             text-align: center;
+        }
+    }
+
+    .photo-gallery {
+        min-height: 50vh;
+        margin-top: 30px;
+
+        .photo {
+            font-size: 32px;
+            color: white;
+            font-family: 'Inter';
+            font-weight: 400;
+            margin-right: 5px;
+        }
+
+        .gallery {
+            font-size: 48px;
+            color: #50DBEE;
+            font-family: 'Inter';
+            font-weight: 700;
+        }
+
+
+        .content {
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            gap: 40px;
+            margin-bottom: 50px;
+
+            .box {
+                background-image: url('../assets/my-images/img1.png');
+                background-size: cover;
+                position: relative;
+                width: 200px;
+                height: 200px;
+                transform-style: preserve-3d;
+                animation: galleryAnimate 30s linear infinite;
+
+            }
+
+            .box span {
+                padding: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transform-origin: center;
+                transform-style: preserve-3d;
+                transform: rotateY(calc(var(--i) * 45deg)) translateZ(400px);
+                -webkit-box-reflect: below 0px -webkit-linear-gradient(transparent, transparent, #0004);
+                /* margin-bottom: 50px; */
+            }
+
+            .box span img {
+                position: absolute;
+                top: 50px;
+                left: 0;
+                width: 150px;
+                height: 150px;
+                object-fit: cover;
+            }
         }
     }
 
