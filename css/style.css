@@ -560,14 +560,14 @@ header nav a {
             flex-direction: column; /* Stack boxes vertically */
             align-items: center;
             justify-content: center;
-            gap: 15px; /* Reduced gap between boxes */
+            gap: 10px; /* Reduced gap between boxes */
             margin-bottom: 30px;
             padding: 10px;
         }
 
         .box {
-            width: 130px; /* Reduced width */
-            height: 130px; /* Reduced height */
+            width: 100px; /* Further reduced width */
+            height: 100px; /* Further reduced height */
             transform: none; /* Removed 3D effect */
             animation: none; /* Disable animation */
         }
@@ -585,6 +585,7 @@ header nav a {
             left: 0;
         }
     }
+
 
 }
 
