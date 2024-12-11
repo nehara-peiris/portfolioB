@@ -1249,9 +1249,11 @@ header nav a {
 
     @media (max-width: 480px) {
         #projects #projTopic {
+            color: #50DBEE;
             font-size: 20px;
 
             h5{
+                color: white;
                 font-size: 10px;
             }
         }
