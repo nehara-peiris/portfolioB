@@ -538,6 +538,51 @@ header nav a {
         }
     }
 
+    @media (max-width: 768px) {
+        .photo-gallery {
+            margin-top: 20px; /* Reduce top margin for smaller screens */
+            min-height: auto; /* Adjust height to fit content */
+
+            .photo {
+                font-size: 24px; /* Decrease font size */
+                text-align: center;
+                margin-right: 0;
+            }
+
+            .gallery {
+                font-size: 32px; /* Decrease font size */
+                text-align: center;
+            }
+
+            .content {
+                flex-direction: column; /* Stack boxes vertically */
+                gap: 20px; /* Reduce spacing between boxes */
+                padding: 15px; /* Decrease padding */
+                margin-bottom: 30px;
+            }
+
+            .box {
+                width: 150px; /* Reduce box size */
+                height: 150px;
+                transform: none; /* Remove 3D effect on smaller screens */
+                animation: none; /* Stop animation for better performance */
+            }
+
+            .box span {
+                transform: none; /* Remove 3D translation */
+                position: relative; /* Simplify positioning */
+            }
+
+            .box span img {
+                width: 100%; /* Make images responsive */
+                height: auto;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+
 }
 
 
