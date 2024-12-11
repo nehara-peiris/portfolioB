@@ -703,8 +703,8 @@ header nav a {
                     font-family: 'Inter';
 
                     img {
-                        width: 300px;
-                        height: 280px;
+                        width: 280px;
+                        height: 250px;
                         border-radius: 15px;
                         box-shadow: rgba(0, 255, 255, 0.2) 0px 5px 15px;
                     }
