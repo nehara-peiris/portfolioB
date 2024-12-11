@@ -403,7 +403,7 @@ header nav a {
 
     @media (max-width: 768px) {
         .about-me {
-            margin-top: 200px;
+            margin-top: 300px;
             display: flex;
             flex-direction: column;
             align-items: center;
