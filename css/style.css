@@ -540,7 +540,7 @@ header nav a {
     @media (max-width: 768px) {
         .photo-gallery {
             margin-top: 20px;
-            min-height: auto;
+            min-height: 90vh;
             padding: 10px;
             overflow: hidden;
         }
