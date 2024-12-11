@@ -540,46 +540,52 @@ header nav a {
     @media (max-width: 768px) {
         .photo-gallery {
             margin-top: 20px;
-            min-height: 60vh;
+            min-height: auto;
+            padding: 15px; /* Add padding to the gallery */
+        }
 
-            .photo {
-                font-size: 24px;
-                text-align: center;
-                margin-right: 0;
-            }
+        .photo {
+            font-size: 20px; /* Smaller font size */
+            text-align: center;
+            margin-right: 0;
+        }
 
-            .gallery {
-                font-size: 32px;
-                text-align: center;
-            }
+        .gallery {
+            font-size: 28px; /* Smaller font size */
+            text-align: center;
+        }
 
-            .content {
-                flex-direction: column;
-                gap: 10px;
-                padding: 7px;
-                margin-bottom: 30px;
-            }
+        .content {
+            display: flex;
+            flex-direction: column; /* Stack boxes vertically */
+            align-items: center;
+            justify-content: center;
+            gap: 15px; /* Reduced gap between boxes */
+            margin-bottom: 30px;
+            padding: 10px;
+        }
 
-            .box {
-                width: 120px;
-                height: 120px;
-               /* transform: none;
-                animation: none; */
-            }
+        .box {
+            width: 130px; /* Reduced width */
+            height: 130px; /* Reduced height */
+            transform: none; /* Removed 3D effect */
+            animation: none; /* Disable animation */
+        }
 
-            .box span {
-                transform: none;
-                position: relative;
-            }
+        .box span {
+            transform: none; /* Removed 3D translation */
+            position: relative;
+        }
 
-            .box span img {
-                width: 80%;
-                height: auto;
-                top: 0;
-                left: 0;
-            }
+        .box span img {
+            width: 100%; /* Make images responsive */
+            height: 100%; /* Make sure images fill the box */
+            object-fit: cover; /* Ensure the image covers the box */
+            top: 0;
+            left: 0;
         }
     }
+
 }
 
 
