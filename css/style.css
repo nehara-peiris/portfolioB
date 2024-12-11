@@ -1106,8 +1106,8 @@ header nav a {
             }
 
             #skillSoftwares {
-                gap: 20px;
-                margin-top: 80px;
+                gap: 15px;
+                margin-top: 50px;
 
                 .sBox {
                     width: 40px;
