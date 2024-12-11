@@ -1308,7 +1308,7 @@ header nav a {
                     gap: 10px;
 
                     h3 {
-                        font-size: 1.5rem;
+                        font-size: 1rem;
                     }
 
                     img {
@@ -1378,12 +1378,12 @@ header nav a {
 
     @media (max-width: 768px) {
         #ytSection {
-            grid-template-columns: 1fr; /* Single column layout */
+            grid-template-columns: 1fr;
             gap: 20px;
         }
 
         #ytTopic h1 {
-            font-size: 2rem;
+            font-size: 1.5rem;
         }
 
         .ytSec {
@@ -1391,7 +1391,7 @@ header nav a {
         }
 
         .ytVideo a img:first-child {
-            height: auto; /* Auto height for images */
+            height: auto;
         }
 
         #ytTopic img {
